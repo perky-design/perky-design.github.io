@@ -2,7 +2,7 @@
 /* ---------------------------------------------------------- */
 
 :root {
-    color-scheme: dark light;
+  color-scheme: light dark;
 }
 
 /* Fonts */
@@ -29,28 +29,57 @@ $margin: 2rem;
 $radius: 0.5rem;
 
 /* Colours */
-$color-body-font: #171717;
-$color-primary-base: #FCFC3B;
-$color-secondary-base: #259E8D;
-
-$color-primary: #6BB8FF;
-$color-base: #131313;
-$color-sub-base: #aaa;
-$color-border: #f5f5f7;
-$color-bg: #FEFEB1;
-$color-bg-dark: #0F3F38;
+$white: #FFFFFF;
+$black: #171717;
+$grey-dark: #666666;
+$grey-base: #A3A3A3;
+$grey-semi: #E6E6E6;
+$grey-light: #FCFCFC;
 $link-color: #0074C7;
+
+$color-primary-lightest: #FEFEB1;
+$color-primary-lighter: #FDFD89;
+$color-primary-light: #FDFD62;
+$color-primary-base: #FCFC3B;
+$color-primary-dark: #CACA2F;
+$color-primary-darker: #979723;
+$color-primary-darkest: #656518;
+
+$color-secondary-lightest: #A8D8D1;
+$color-secondary-lighter: #7CC5BB;
+$color-secondary-light: #51B1A4;
+$color-secondary-base: #259E8D;
+$color-secondary-dark: #1E7E71;
+$color-secondary-darker: #165F55;
+$color-secondary-darkest: #0F3F38;
+
+$color-tertiary-lightest: #CBABDC;
+$color-tertiary-lighter: #B182CB;
+$color-tertiary-light: #9758B9;
+$color-tertiary-base: #7D2EA8;
+$color-tertiary-dark: #642586;
+$color-tertiary-darker: #4B1C65;
+$color-tertiary-darkest: #321243;
+
+$color-body-font: $black;
+
+$color-primary: $color-primary-base;
+$color-base: $black;
+$color-sub-base: $grey-base;
+$color-border: $grey-light;
+$color-bg-light-mode: $color-primary-base;
+$color-bg-dark-mode: $color-secondary-base;
 $color-bg-bright: #1d1d1f;
 
-$color-primary-light: #00529E;
-$color-base-light: #fff;
+$color-primary-light: $black;
+$color-base-light: $white;
 $color-base-light-inverted: #131313;
 $color-sub-base-light: #454545;
 $color-border-light: #ababab;
-$color-bg-light: #FEFEB1;
+$color-bg-light-mode: $color-bg-light-mode;
 
 $color-bg-bright-light: #EDEDED;
-$color-bg-dark-light: #131313;
+$color-bg-dark-mode-light: #131313;
 $color-body-font-light: #131313;
 $color-body-font-light-2: #000000;
 $link-color-light: #0074c1;

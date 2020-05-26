@@ -8,6 +8,7 @@ production stylesheet in assets/built/screen.scss using gulp dev
 /* Lib - Local component imports
 /* ---------------------------------------------------------- */
 @import "fonts/inter.css";
+@import "fonts/oxygen.css";
 @import "vars.scss";
 @import "components/global.scss";
 @import "components/ghost.scss";
@@ -38,14 +39,8 @@ h1, h2, h3, h4, h5, h6, .site-head-logo {
 /* ---------------------------------------------------------- */
 
 body {
-  background: #259E8D;
-  color: #FCFC3B;
   transition: background 0.3s ease-out;
-  transition-delay: 0.25;
-  @include light-mode {
-    background: #FCFC3B;
-    color: #259E8D;
-  }
+  transition-delay: 0.25s;
 }
 
 .img {
@@ -115,9 +110,9 @@ body {
 .page-head-title, .post-content-title {
   margin: 0;
   font-size: 4.2rem;
-  color: #FCFC3B;
-  @include light-mode {
-    color: #259E8D;
+  color: $color-secondary-base;
+  @include dark-mode {
+    color: $color-primary-base;
   }
 }
 @media (max-width: 500px) {
@@ -368,13 +363,13 @@ body {
   }
 
   .site-head-open {
-    background: $color-bg;
+    background: $color-bg-light-mode;
     transition: background 0.5s ease-out;
     transition-delay: 0.25;
     overflow: hidden;
     height: 100vh;
     @include light-mode {
-      background: $color-bg-light;
+      background: $color-bg-light-mode;
     }
   }
 
@@ -683,8 +678,8 @@ body {
   font-size: 0.8em;
   line-height: 1em;
   font-weight: 400 !important;
-  /* background: $color-bg; */
-  background: var($color-bg-dark) !important;
+  /* background: $color-bg-light-mode; */
+  background: var($color-bg-dark-mode) !important;
   border-radius: 3px !important;
 }
 
@@ -697,11 +692,11 @@ body {
   margin: 1.5em 0 3em;
   padding: 20px;
   max-width: 100%;
-  border: $color-bg-bright 1px solid !important;
+  border: $color-bg-light-mode 1px solid !important;
   color: $color-body-font;
   font-size: 1.4rem;
   line-height: 1.5em;
-  background: $color-bg-dark !important;
+  background: $color-bg-dark-mode !important;
   border-radius: 5px;
   // @include light-mode {
   //   color: $color-body-font-light;
@@ -824,23 +819,23 @@ body {
   flex: 1 1 auto;
   margin: 0.7vw;
   padding: 0.5vw;
-  background-color: $color-bg-bright;
+  background-color: $color-bg-light-mode;
   color: $color-sub-base;
   font-size: 2rem;
   line-height: 1em;
   white-space: nowrap;
   @include light-mode {
-    background-color: $color-bg-bright-light;
+    background-color: $color-bg-light-mode;
     color: $color-sub-base-light;
   }
 }
 
 .tag-item:hover {
-  color: $color-bg-bright;
+  color: $color-bg-light-mode;
   background-color: $color-sub-base;
   transition: all 0.4s ease-out;
   @include light-mode {
-    color: $color-bg-bright-light;
+    color: $color-bg-light-mode;
     background-color: $color-sub-base-light;
   }
 }

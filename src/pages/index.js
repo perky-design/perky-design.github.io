@@ -1,14 +1,14 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 
-import Layout from "../components/layout-temp"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import Bio from "../components/bio"
 import PostCard from "../components/postCard"
 
 import "../style/normalize.css"
 import "../style/all.scss"
-
+//TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
@@ -23,11 +23,24 @@ const BlogIndex = ({ data }, location) => {
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (
         <header className="page-head">
-          <h1 className="page-head-title">
-            {data.site.siteMetadata.title}
-          </h1>
+          <h2 className="page-head-title">
+            {data.site.siteMetadata.description}
+          </h2>
         </header>
       )}
+      <div className="post-feed">
+        {posts.map(({ node }) => {
+          postCounter++
+          return (
+            <PostCard
+              key={node.fields.slug}
+              count={postCounter}
+              node={node}
+              postClass={`post`}
+            />
+          )
+        })}
+      </div>
     </Layout>
   )
 }

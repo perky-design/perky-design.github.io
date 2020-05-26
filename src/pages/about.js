@@ -17,7 +17,7 @@ const AboutPage = ({ data }, location) => {
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
-          <h2 class="page-head-title" id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
+          <h2 className="page-head-title" id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
             Life is perky by design
           </h2>
           <p>You might have heard of “privacy by design” or ”accessible by design”, but “perky by design?” </p>
