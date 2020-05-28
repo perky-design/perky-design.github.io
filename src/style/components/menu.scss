@@ -9,8 +9,11 @@
   letter-spacing: 1px;
   overflow: hidden;
   text-overflow: ellipsis;
-  @include light-mode {
-    color: $color-body-font-light;
+  background-image: url("img/perky-logo-green.svg");
+  background-repeat: no-repeat;
+  @include dark-mode {
+    background-image: url("img/perky-logo-yellow.svg");
+    color: $white;
   }
 }
 
@@ -26,6 +29,6 @@
 }
 
 .site-head-logo {
-  padding-left: 120px;
+  padding-left: 48px;
   height: 40px;
 }
