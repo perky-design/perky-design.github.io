@@ -21,17 +21,28 @@ production stylesheet in assets/built/screen.scss using gulp dev
 @import "components/hamburger.scss";
 @import "components/animations.scss";
 @import "components/prism.scss";
-
+@import "components/menu.scss";
 
 /* Typograhpy
 /* ---------------------------------------------------------- */
 
-html, body { font-family: $font-sans-serif; }
+html,
+body {
+  font-family: $font-sans-serif;
+}
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
-h1, h2, h3, h4, h5, h6, .site-head-logo {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-head-logo {
   font-family: $font-headers;
 }
 
@@ -107,7 +118,8 @@ body {
   text-decoration: underline;
 }
 
-.page-head-title, .post-content-title {
+.page-head-title,
+.post-content-title {
   margin: 0;
   font-size: 4.2rem;
   color: $color-secondary-base;
@@ -210,33 +222,6 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-}
-
-.site-head-logo {
-  flex-shrink: 0;
-  display: block;
-  padding: 10px;
-  color: $color-body-font;
-  font-size: 2.1rem;
-  line-height: 1em;
-  font-weight: 700;
-  letter-spacing: 1px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  @include light-mode {
-    color: $color-body-font-light;
-  }
-}
-
-.site-head-logo:hover {
-  text-decoration: none;
-}
-
-.site-head-logo img {
-  display: block;
-  margin-top: 2px;
-  width: auto;
-  height: 28px;
 }
 
 .site-head-right {
