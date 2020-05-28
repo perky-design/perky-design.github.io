@@ -20,19 +20,25 @@ Yes, you can. See below.
 
 ---
 
-This site is build with [Gatsby](https://www.gatsbyjs.org/)
+## ✅ Requirements
 
-_First time with Gatsby? Take a look on the [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+- This site is build with [Gatsby](https://www.gatsbyjs.org/)
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Clone this project**
 
-    Use the Gatsby CLI to create a new project
+    Create a fork of this project and clone the fork to your development environment.
 
     ```sh
-    # create a new Gatsby site using the blog starter
-    gatsby new my-perky-design-starter https://github.com/jooplaan/gatsby-london-night-and-day
+    # Git clone the repo
+    git clone <repo> my-perky-design-starter
+    # Go to directory
+    cd my-perky-design-starter
+    # Make sure you are in the development
+    git switch development
+    # Install packages
+    npm install
     ```
 
 1.  **Start developing.**
