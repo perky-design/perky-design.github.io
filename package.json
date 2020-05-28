@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-london-after-midnight",
+  "name": "perky-design",
   "private": true,
-  "description": "A custom, image-centric theme for Gatsby",
+  "description": "Gatsby for perky.design website",
   "version": "1.0.2",
-  "author": "Vaporwavy <i@ttv8.me> (https://vaporwavy.io)",
+  "author": "Joop Laan <joop@perky.design> (https://perky.design)",
   "bugs": {
-    "url": "https://github.com/vaporwavy/gatsby-london-after-midnight/issues"
+    "url": "https://github.com/perky-design/perky-design.github.io/issues"
   },
   "dependencies": {
     "gatsby": "^2.22.9",
@@ -49,7 +49,7 @@
     "prettier": "^1.17.0",
     "pretty-quick": "^1.10.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/perky-design/perky-design.github.io#readme",
   "keywords": [
     "gatsby",
     "ghost",
@@ -61,7 +61,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vaporwavy/gatsby-london-after-midnight.git"
+    "url": "git+https://github.com/perky-design/perky-design.github.io.git"
   },
   "scripts": {
     "build": "gatsby build",
@@ -71,6 +71,13 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "deploy": "gatsby clean && gatsby build --prefix-paths && touch public/CNAME && echo 'perky.design' > public/CNAME && cp README.md public && cp LICENSE public && gh-pages -d public -b master"
+  },
+  "lint-staged": {
+    "ignore": [
+      "node_modules",
+      "dist",
+      "package-lock.json"
+    ]
   },
   "husky": {
     "hooks": {
