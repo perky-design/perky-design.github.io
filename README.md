@@ -8,8 +8,6 @@
   perky.design
 </h1>
 
-
-
 ---
 
 The website perky.design, released under the MIT license.
@@ -54,16 +52,14 @@ _First time with Gatsby? Take a look on the [official and community-created star
 
     Open the `my-perky-design-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-
 ## ⛳️ Deploying on Github
 
 1.  **Update the package.json file**
 
-    Edit line 73 with your domain name. If you have another set-up (non domain). See:
+    Edit line 73 of the package.json file, add your domain name. If you have another set-up (non domain). See:
     https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages/
 
     ```sh
     # run deploy script
     npm run deploy
     ```
-
